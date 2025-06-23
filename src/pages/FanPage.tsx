@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { useWallet } from '../context/WalletContext';
-import NotificationSystem from '../components/fanpage/NotificationSystem';
-import UserProfile from '../components/fanpage/UserProfile';
-import PostsList from '../components/fanpage/PostsList';
-import CreatePostModal from '../components/fanpage/CreatePostModal';
-import CommentsModal from '../components/fanpage/CommentsModal';
-import TipModal from '../components/fanpage/TipModal';
-import { useNotifications } from '../components/fanpage/hooks/useNotifications';
-import { usePosts } from '../components/fanpage/hooks/usePosts';
-import { useComments } from '../components/fanpage/hooks/useComments';
-import { Post, NewPost, EmojiType } from '../components/fanpage/types';
+import NotificationSystem from '../components/FanPage/NotificationSystem';
+import UserProfile from '../components/FanPage/UserProfile';
+import PostsList from '../components/FanPage/PostsList';
+import CreatePostModal from '../components/FanPage/CreatePostModal';
+import CommentsModal from '../components/FanPage/CommentsModal';
+import TipModal from '../components/FanPage/TipModal';
+import { useNotifications } from '../components/FanPage/hooks/useNotifications';
+import { usePosts } from '../components/FanPage/hooks/usePosts';
+import { useComments } from '../components/FanPage/hooks/useComments';
+import { Post, NewPost, EmojiType } from '../components/FanPage/types';
 
 const FanPage: React.FC = () => {
   const { connected, openModal, publicKey } = useWallet();
